@@ -1,4 +1,4 @@
-package com.company._6_IO_Decorator;
+package com.company._3_Decorator._5_IO_Decorator;
 
 //import java.io.*;
 
