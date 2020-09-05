@@ -9,8 +9,9 @@ public class SimpleSubject extends Observable {
 	
 	public void setValue(int value) {
 		this.value = value;
-		setChanged();
-		notifyObservers(value);
+		setChanged();   // -> changed = true
+        // защита от лишних оповещений
+		notifyObservers(value); // if changed -> call update -> changed = false
 	}
 	
 	public int getValue() {
