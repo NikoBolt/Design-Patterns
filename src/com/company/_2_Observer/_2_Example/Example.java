@@ -1,4 +1,4 @@
-package com.company._2_Observer._2;
+package com.company._2_Observer._2_Example;
 
 public class Example {
 

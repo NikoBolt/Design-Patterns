@@ -1,4 +1,4 @@
-package com.company._2_Observer._2;
+package com.company._2_Observer._2_Example;
 
 import java.util.Observable;
 import java.util.Observer;
