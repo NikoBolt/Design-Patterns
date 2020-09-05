@@ -1,4 +1,4 @@
-package com.company._2_Observer._5_HeatIndex;
+package com.company._2_Observer._2_WeatherStation.Example_Interface;
 
 public interface Subject {
 	void registerObserver(Observer o);

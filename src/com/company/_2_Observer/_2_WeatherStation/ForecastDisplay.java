@@ -1,4 +1,4 @@
-package com.company._2_Observer._5_HeatIndex;
+package com.company._2_Observer._2_WeatherStation;
 
 public class ForecastDisplay implements Observer, DisplayElement {
     private float currentPressure = 29.92f;

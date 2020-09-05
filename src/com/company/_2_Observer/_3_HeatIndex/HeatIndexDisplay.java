@@ -1,4 +1,4 @@
-package com.company._2_Observer._5_HeatIndex;
+package com.company._2_Observer._3_HeatIndex;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
     float heatIndex = 0.0f;

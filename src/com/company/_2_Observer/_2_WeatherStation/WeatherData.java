@@ -1,4 +1,4 @@
-package com.company._2_Observer._5_HeatIndex;
+package com.company._2_Observer._2_WeatherStation;
 
 import java.util.ArrayList;
 

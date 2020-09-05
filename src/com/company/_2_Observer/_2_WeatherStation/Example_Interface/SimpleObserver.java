@@ -1,4 +1,4 @@
-package com.company._2_Observer._3_Interface;
+package com.company._2_Observer._2_WeatherStation.Example_Interface;
 	
 public class SimpleObserver implements Observer {
 	private int value;
