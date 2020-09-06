@@ -1,4 +1,4 @@
-package com.company._4_Factory._2_Type;
+package com.company._4_Factory._2_Variety;
 
 abstract public class Pizza {
 	String name;
