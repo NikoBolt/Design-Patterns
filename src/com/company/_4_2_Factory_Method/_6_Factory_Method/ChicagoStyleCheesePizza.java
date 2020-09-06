@@ -1,14 +1,15 @@
-package com.company._4_2_Factory_Method._6;
+package com.company._4_2_Factory_Method._6_Factory_Method;
 
-public class ChicagoStyleClamPizza extends Pizza {
-	public ChicagoStyleClamPizza() {
-		name = "Chicago Style Clam Pizza";
+public class ChicagoStyleCheesePizza extends Pizza {
+
+	public ChicagoStyleCheesePizza() { 
+		name = "Chicago Style Deep Dish Cheese Pizza";
 		dough = "Extra Thick Crust Dough";
 		sauce = "Plum Tomato Sauce";
  
 		toppings.add("Shredded Mozzarella Cheese");
-		toppings.add("Frozen Clams from Chesapeake Bay");
 	}
+
 	@Override
 	public void cut() {
 		System.out.println("Cutting the pizza into square slices");

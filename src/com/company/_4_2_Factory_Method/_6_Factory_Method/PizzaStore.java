@@ -1,4 +1,4 @@
-package com.company._4_2_Factory_Method._6;
+package com.company._4_2_Factory_Method._6_Factory_Method;
 
 public abstract class PizzaStore {
 //	SimplePizzaFactory factory;

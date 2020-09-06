@@ -1,4 +1,4 @@
-package com.company._4_2_Factory_Method._6;
+package com.company._4_2_Factory_Method._7_Depensensies;
 
 public class NYStyleCheesePizza extends Pizza {
 
