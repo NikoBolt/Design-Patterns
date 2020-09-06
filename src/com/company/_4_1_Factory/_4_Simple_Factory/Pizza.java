@@ -1,7 +1,11 @@
-package com.company._4_Factory._2_Variety;
+package com.company._4_1_Factory._4_Simple_Factory;
 
 abstract public class Pizza {
 	String name;
+
+	public String getName() {
+		return name;
+	}
 
 	public void prepare() {
 		System.out.println("Preparing " + name);
@@ -19,4 +23,5 @@ abstract public class Pizza {
 		System.out.println("Boxing " + name);
 	}
 }
+
 

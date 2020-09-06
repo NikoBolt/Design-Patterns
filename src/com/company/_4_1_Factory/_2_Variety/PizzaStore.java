@@ -1,4 +1,4 @@
-package com.company._4_Factory._2_Variety;
+package com.company._4_1_Factory._2_Variety;
 
 public class PizzaStore {
  

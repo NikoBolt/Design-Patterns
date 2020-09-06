@@ -1,6 +1,6 @@
-package com.company._4_Factory._3_Types;
+package com.company._4_1_Factory._1_Simple;
 
-abstract public class Pizza {
+public class Pizza {
 	String name;
 
 	public void prepare() {

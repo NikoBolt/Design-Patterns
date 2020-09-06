@@ -1,8 +1,10 @@
-package com.company._4_Factory._2_Variety;
+package com.company._4_1_Factory._4_Simple_Factory;
 
 public class CheesePizza extends Pizza {
 
-	public CheesePizza() {}
+	public CheesePizza() {
+		name = "Cheese Pizza";
+	}
 
 	@Override
 	public void prepare() {

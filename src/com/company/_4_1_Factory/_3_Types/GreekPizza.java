@@ -1,4 +1,4 @@
-package com.company._4_Factory._2_Variety;
+package com.company._4_1_Factory._3_Types;
 
 public class GreekPizza extends Pizza {
     public GreekPizza(){
