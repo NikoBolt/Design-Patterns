@@ -1,7 +1,12 @@
 package com.company._4_2_Factory_Method._5_NY_Chicago_California;
 
+import java.util.ArrayList;
+
 abstract public class Pizza {
 	String name;
+	String dough;
+	String sauce;
+	ArrayList<String> toppings = new ArrayList<String>();
 
 	public String getName() {
 		return name;
