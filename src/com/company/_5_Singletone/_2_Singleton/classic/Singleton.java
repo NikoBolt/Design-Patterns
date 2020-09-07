@@ -1,4 +1,4 @@
-package com.company._5_Singletone._2.classic;
+package com.company._5_Singletone._2_Singleton.classic;
 
 // NOTE: This is not thread safe!
 
