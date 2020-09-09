@@ -25,4 +25,6 @@ public class Singleton {
         }
         return uniqueInstance;
     }
+
+    // Условная блокировка работает только на Java 5 и выше
 }

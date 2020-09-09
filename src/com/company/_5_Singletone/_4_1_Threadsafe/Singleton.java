@@ -20,4 +20,7 @@ public class Singleton {
     public String getDescription() {
         return "I'm a thread safe Singleton!";
     }
+
+    // Простое и заведомо рабочее решение.
+    // Хорошо подходит для задач, в которых нет проблем с быстродействием
 }

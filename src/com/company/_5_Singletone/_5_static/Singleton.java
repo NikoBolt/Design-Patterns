@@ -14,4 +14,7 @@ public class Singleton {
 	public String getDescription() {
 		return "I'm a statically initialized Singleton!";
 	}
+
+	// Экземпляр необходим всегда, поэтому ранняя инициализация не создаст проблем.
+
 }
