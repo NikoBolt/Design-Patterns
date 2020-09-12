@@ -1,0 +1,21 @@
+package com.company._6_Command._4_RemoteControl.Commands;
+
+import com.company._6_Command._4_RemoteControl.Objects.CeilingFan;
+
+public class CeilingFanOffCommand implements Command {
+    CeilingFan ceilingFan;
+
+    public CeilingFanOffCommand(CeilingFan ceilingFan) {
+        this.ceilingFan = ceilingFan;
+    }
+
+    @Override
+    public void execute() {
+        ceilingFan.off();
+    }
+
+    @Override
+    public String toString() {
+        return "CellingFanOffCommand";
+    }
+}
