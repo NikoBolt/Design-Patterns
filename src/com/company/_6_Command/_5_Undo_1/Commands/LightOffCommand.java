@@ -1,6 +1,6 @@
-package com.company._6_Command._5.Commands;
+package com.company._6_Command._5_Undo_1.Commands;
 
-import com.company._6_Command._5.Obj.Light;
+import com.company._6_Command._5_Undo_1.Obj.Light;
 
 public class LightOffCommand implements Command {
     Light light;

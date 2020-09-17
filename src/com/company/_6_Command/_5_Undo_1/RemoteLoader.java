@@ -1,8 +1,8 @@
-package com.company._6_Command._5;
+package com.company._6_Command._5_Undo_1;
 
-import com.company._6_Command._5.Commands.LightOffCommand;
-import com.company._6_Command._5.Commands.LightOnCommand;
-import com.company._6_Command._5.Obj.Light;
+import com.company._6_Command._5_Undo_1.Commands.LightOffCommand;
+import com.company._6_Command._5_Undo_1.Commands.LightOnCommand;
+import com.company._6_Command._5_Undo_1.Obj.Light;
 
 public class RemoteLoader {
     public static void main(String[] args) {

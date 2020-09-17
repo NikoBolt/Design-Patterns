@@ -1,4 +1,4 @@
-package com.company._6_Command._5.Commands;
+package com.company._6_Command._5_Undo_1.Commands;
 
 public interface Command {
     /*public*/ void execute();

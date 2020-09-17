@@ -1,4 +1,4 @@
-package com.company._6_Command._5.Obj;
+package com.company._6_Command._5_Undo_1.Obj;
 
 public class Light {
     String location;

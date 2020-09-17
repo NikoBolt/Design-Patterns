@@ -1,7 +1,7 @@
-package com.company._6_Command._5;
+package com.company._6_Command._5_Undo_1;
 
-import com.company._6_Command._5.Commands.Command;
-import com.company._6_Command._5.Commands.NoCommand;
+import com.company._6_Command._5_Undo_1.Commands.Command;
+import com.company._6_Command._5_Undo_1.Commands.NoCommand;
 
 public class RemoteControlWithUndo {
     Command[] onCommands;
