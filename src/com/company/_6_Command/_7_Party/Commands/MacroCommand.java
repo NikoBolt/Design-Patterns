@@ -18,12 +18,12 @@ public class MacroCommand implements Command {
      * NOTE:  these commands have to be done backwards to ensure
      * proper undo functionality
      */
-//    @Override
-//    public void undo() {
-//        for (int i = 0; i < commands.length; i++){
-//            commands[i].undo();
-//        }
-//    }
+    @Override
+    public void undo() {
+        for (int i = 0; i < commands.length; i++){
+            commands[i].undo();
+        }
+    }
 
     @Override
     public String toString() {
