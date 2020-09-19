@@ -1,4 +1,4 @@
-package com.company._7._2_DuckAdapter.Objects;
+package com.company._7_1_Adapter._2_DuckAdapter.Objects;
 
 public class MallardDuck implements Duck {
 

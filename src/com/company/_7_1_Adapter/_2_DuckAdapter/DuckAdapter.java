@@ -1,7 +1,7 @@
-package com.company._7._2_DuckAdapter;
+package com.company._7_1_Adapter._2_DuckAdapter;
 
-import com.company._7._2_DuckAdapter.Objects.Duck;
-import com.company._7._2_DuckAdapter.Objects.Turkey;
+import com.company._7_1_Adapter._2_DuckAdapter.Objects.Duck;
+import com.company._7_1_Adapter._2_DuckAdapter.Objects.Turkey;
 
 import java.util.Random;
 
