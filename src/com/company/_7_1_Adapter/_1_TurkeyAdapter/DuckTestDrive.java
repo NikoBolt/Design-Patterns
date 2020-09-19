@@ -1,6 +1,8 @@
-package com.company._7._1_TurkeyAdapter;
+package com.company._7_1_Adapter._1_TurkeyAdapter;
 
-import com.company._7._1_TurkeyAdapter.Objects.*;
+import com.company._7_1_Adapter._1_TurkeyAdapter.Objects.Duck;
+import com.company._7_1_Adapter._1_TurkeyAdapter.Objects.MallardDuck;
+import com.company._7_1_Adapter._1_TurkeyAdapter.Objects.WildTurkey;
 
 public class DuckTestDrive {
     public static void main(String[] args) {

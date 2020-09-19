@@ -1,4 +1,4 @@
-package com.company._7._1_TurkeyAdapter.Objects;
+package com.company._7_1_Adapter._1_TurkeyAdapter.Objects;
 
 public interface Turkey {
     /*public*/ void gobble();

@@ -1,7 +1,7 @@
-package com.company._7._1_TurkeyAdapter;
+package com.company._7_1_Adapter._1_TurkeyAdapter;
 
-import com.company._7._1_TurkeyAdapter.Objects.Duck;
-import com.company._7._1_TurkeyAdapter.Objects.Turkey;
+import com.company._7_1_Adapter._1_TurkeyAdapter.Objects.Duck;
+import com.company._7_1_Adapter._1_TurkeyAdapter.Objects.Turkey;
 
 public class TurkeyAdapter implements Duck {
     Turkey turkey;
