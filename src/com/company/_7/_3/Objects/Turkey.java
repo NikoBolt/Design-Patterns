@@ -1,0 +1,6 @@
+package com.company._7._3.Objects;
+
+public interface Turkey {
+    /*public*/ void gobble();
+    /*public*/ void fly();
+}
