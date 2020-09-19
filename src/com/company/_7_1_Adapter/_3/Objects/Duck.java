@@ -1,4 +1,4 @@
-package com.company._7._3.Objects;
+package com.company._7_1_Adapter._3.Objects;
 
 public interface Duck {
     /*public*/ void quack();

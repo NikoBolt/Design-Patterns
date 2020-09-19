@@ -1,4 +1,4 @@
-package com.company._7._3.challenge;
+package com.company._7_1_Adapter._3.challenge;
 
 public class SuperDrone implements Drone {
 	public void beep() {

@@ -1,7 +1,7 @@
-package com.company._7._3;
+package com.company._7_1_Adapter._3;
 
-import com.company._7._3.Objects.*;
-import com.company._7._3.challenge.*;
+import com.company._7_1_Adapter._3.Objects.*;
+import com.company._7_1_Adapter._3.challenge.*;
 
 public class DuckTestDrive {
 	public static void main(String[] args) {

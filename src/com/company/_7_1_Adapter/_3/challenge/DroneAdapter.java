@@ -1,6 +1,6 @@
-package com.company._7._3.challenge;
+package com.company._7_1_Adapter._3.challenge;
 
-import com.company._7._3.Objects.Duck;
+import com.company._7_1_Adapter._3.Objects.Duck;
 
 public class DroneAdapter implements Duck {
 	Drone drone;
