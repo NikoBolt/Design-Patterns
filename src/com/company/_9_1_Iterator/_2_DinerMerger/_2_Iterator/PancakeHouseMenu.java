@@ -3,7 +3,7 @@ package com.company._9_1_Iterator._2_DinerMerger._2_Iterator;
 import java.util.ArrayList;
 //import java.util.List;
 
-public class PancakeHouseMenu /*implements Menu*/{
+public class PancakeHouseMenu {
     ArrayList<MenuItem> menuItems;
 //    List<MenuItem> menuItems;
 

@@ -1,6 +1,6 @@
 package com.company._9_1_Iterator._2_DinerMerger._2_Iterator;
 
-public class DinerMenu /*implements Menu*/{
+public class DinerMenu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
