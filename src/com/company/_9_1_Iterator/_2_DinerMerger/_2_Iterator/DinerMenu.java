@@ -1,4 +1,4 @@
-package com.company._9_1_Iterator._2_Iterator;
+package com.company._9_1_Iterator._2_DinerMerger._2_Iterator;
 
 public class DinerMenu /*implements Menu*/{
     static final int MAX_ITEMS = 6;
