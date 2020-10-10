@@ -1,4 +1,4 @@
-package com.company._9_2_composite._2;
+package com.company._9_2_composite._2_menuComponents;
 
 public abstract class MenuComponent {
 
