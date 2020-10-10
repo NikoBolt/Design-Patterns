@@ -58,7 +58,7 @@ public class Waitress {
 
     private void printVegetarianMenu(Iterator iterator) {
         while (iterator.hasNext()) {
-            MenuItem menuItem = iterator.next();
+            MenuItem menuItem = (MenuItem) iterator.next();
             if (menuItem.isVegetarian()) {
                 System.out.print(menuItem.getName());
                 System.out.println("\t\t" + menuItem.getPrice());
@@ -69,7 +69,7 @@ public class Waitress {
 
     private boolean isVegetarian(String name, Iterator iterator) {
         while (iterator.hasNext()) {
-            MenuItem menuItem = iterator.next();
+            MenuItem menuItem = (MenuItem) iterator.next();
             if (menuItem.getName().equals(name)) {
                 if (menuItem.isVegetarian()) {
                     return true;
