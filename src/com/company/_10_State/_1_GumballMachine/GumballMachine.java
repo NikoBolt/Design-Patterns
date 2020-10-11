@@ -18,71 +18,71 @@ public class GumballMachine {
         }
     }
 
-    // в автомат бросают монету
+    // В автомат бросают монету
     public void insertQuarter() {
         // проверяем состояние и выдаем поведение
         if (state == HAS_QUARTER) {
-            System.out.println("You can't insert another quarter");
+            System.out.println("You can't insert another quarter"); // В автомате уже есть монета
         } else if (state == NO_QUARTER) {
             state = HAS_QUARTER;
-            System.out.println("You inserted a quarter");
+            System.out.println("You inserted a quarter");           // Автомат принимает монету
         } else if (state == SOLD_OUT) {
-            System.out.println("You can't insert a quarter, the machine is sold out");
+            System.out.println("You can't insert a quarter, the machine is sold out");  // Автомат отклоняет монету, т.к. все шарики проданы
         } else if (state == SOLD) {
-            System.out.println("Please wait, we're already giving you a gumball");
+            System.out.println("Please wait, we're already giving you a gumball");  // Следует подождать завершения операции, прежде чем бросать другую монету
         }
     }
 
-    // покупатель пытается вернуть монету
+    // Покупатель пытается вернуть монету
     public void ejectQuarter() {
         if (state == HAS_QUARTER) {
-            System.out.println("Quarter returned");
+            System.out.println("Quarter returned"); // Автомат возвращает монету и переходит в NO_QUARTER
             state = NO_QUARTER;
         } else if (state == NO_QUARTER) {
-            System.out.println("You haven't inserted a quarter");
+            System.out.println("You haven't inserted a quarter");   // Если монеты небыло, то и вернуть её невозможно
         } else if (state == SOLD) {
-            System.out.println("Sorry, you already turned the crank");
+            System.out.println("Sorry, you already turned the crank");  // Шарик уже куплен, возврат невозможен
         } else if (state == SOLD_OUT) {
-            System.out.println("You can't eject, you haven't inserted a quarter yet");
+            System.out.println("You can't eject, you haven't inserted a quarter yet");  // Если шариков небыло, то автомат не принимал монеты, значит и вернуть не может
         }
     }
 
-    // покупатель дергает рычаг
+    // Покупатель дергает рычаг
     public void turnCrank() {
         if (state == SOLD) {
-            System.out.println("Turning twice doesn't get you another gumball!");
+            System.out.println("Turning twice doesn't get you another gumball!");   // Покупатель дергает рычаг 2й раз, но 2й шарик он неполучит
         } else if (state == NO_QUARTER) {
-            System.out.println("You turned but there's no quarter");
+            System.out.println("You turned but there's no quarter");    //  Сначала надо бросить монету
         } else if (state == SOLD_OUT) {
-            System.out.println("You turned, but there are no gumballs");
+            System.out.println("You turned, but there are no gumballs");    //  Выдача невозможна, в автомате нет шариков
         } else if (state == HAS_QUARTER) {
-            System.out.println("You turned...");
+            System.out.println("You turned...");    // Выдача шарика, переход в SOLD
             state = SOLD;
             dispense();
         }
     }
 
-    // выдача шарика
+    // Выдача шарика
     private void dispense() {
         if (state == SOLD) {
-            System.out.println("A gumball comes rolling out the slot");
+            System.out.println("A gumball comes rolling out the slot"); //  Выдать шарик
             count = count - 1;
-            if (count == 0) {
-                System.out.println("Oops, out of gumballs!");
-                state = SOLD_OUT;
-            } else {
-                state = NO_QUARTER;
+            if (count == 0) {                               // Остались шарики?
+                System.out.println("Oops, out of gumballs!");   // - Нет
+                state = SOLD_OUT;                               // Перейти в SOLD_OUT
+            } else {                                            // - Да
+                state = NO_QUARTER;                             // Перейти в NO_QUARTER
             }
-        } else if (state == NO_QUARTER) {
-            System.out.println("You need to pay first");
+        } else if (state == NO_QUARTER) {               // Автомат выдает ошибку
+            System.out.println("You need to pay first");    // Сначала надо заплатить
         } else if (state == SOLD_OUT) {
-            System.out.println("No gumball dispensed");
+            System.out.println("No gumball dispensed");     // Шариков нет. Все проданы
         } else if (state == HAS_QUARTER) {
-            System.out.println("No gumball dispensed");
+            System.out.println("No gumball dispensed");     // Шариков нет. Монетку нельзя было кинуть
         }
     }
 
-    // автомат заполняется жвачкой
+    // Автомат заполняется жвачкой
     public void refill(int numGumBalls) {
         this.count = numGumBalls;
         state = NO_QUARTER;
