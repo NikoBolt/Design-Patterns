@@ -24,15 +24,19 @@ public class GumballMachine {
 			state = noQuarterState;
 		} 
 	}
- 
+
+	// в автомат бросают монету
 	public void insertQuarter() {
+		// Действие делегируется объекту текущего состояния
 		state.insertQuarter();
 	}
- 
+
+	// покупатель пытается вернуть монету
 	public void ejectQuarter() {
 		state.ejectQuarter();
 	}
- 
+
+	// покупатель дергает рычаг
 	public void turnCrank() {
 		state.turnCrank();
 		state.dispense();
@@ -41,22 +45,26 @@ public class GumballMachine {
 	void setState(State state) {
 		this.state = state;
 	}
- 
+
+	// выдача шарика
 	void releaseBall() {
 		System.out.println("A gumball comes rolling out the slot...");
 		if (count != 0) {
 			count = count - 1;
 		}
 	}
- 
-	int getCount() {
-		return count;
-	}
- 
-	void refill(int count) {
+
+	// Перезарядка машины
+	// автомат заполняется жвачкой
+	protected void refill(int count) {
 		this.count += count;
 		System.out.println("The gumball machine was just refilled; it's new count is: " + this.count);
 		state.refill();
+	}
+
+	// Get-теры
+	int getCount() {
+		return count;
 	}
 
     public State getState() {

@@ -11,16 +11,22 @@ public class HasQuarterState implements State {
 	public HasQuarterState(GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;
 	}
-  
+
+	@Override
+	// Некорректное действие
 	public void insertQuarter() {
 		System.out.println("You can't insert another quarter");
 	}
- 
+
+	@Override
+	// Вернуть монетку и перейти в NoQuarterState
 	public void ejectQuarter() {
 		System.out.println("Quarter returned");
 		gumballMachine.setState(gumballMachine.getNoQuarterState());
 	}
- 
+
+	@Override
+	// Рычаг дернули -> переход в SoldState
 	public void turnCrank() {
 		System.out.println("You turned...");
 		int winner = randomWinner.nextInt(10);
@@ -31,10 +37,13 @@ public class HasQuarterState implements State {
 		}
 	}
 
+	@Override
+	// Некорректное действие
     public void dispense() {
         System.out.println("No gumball dispensed");
     }
-    
+
+	@Override
     public void refill() { }
  
 	public String toString() {
