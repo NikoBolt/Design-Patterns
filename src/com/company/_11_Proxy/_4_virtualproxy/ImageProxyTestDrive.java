@@ -16,6 +16,9 @@ public class ImageProxyTestDrive {
 	}
 
 	public ImageProxyTestDrive() throws Exception {
+
+		// ---
+		// Создание панели и меню
 		albums.put("Buddha Bar","http://images.amazon.com/images/P/B00009XBYK.01.LZZZZZZZ.jpg");
 		albums.put("Ima","http://images.amazon.com/images/P/B000005IRM.01.LZZZZZZZ.jpg");
 		albums.put("Karma","http://images.amazon.com/images/P/B000005DCB.01.LZZZZZZZ.gif");
@@ -40,10 +43,10 @@ public class ImageProxyTestDrive {
 		}
 
 		// set up frame and menus
+		// ---
 
-		Icon icon = new ImageProxy(initialURL);
-		imageComponent = new ImageComponent(icon);
-		frame.getContentPane().add(imageComponent);
+		Icon icon = new ImageProxy(initialURL);		// при выборе нового диска создается новый заместитель
+		imageComponent = new ImageComponent(icon);	// Зам упаковыывется в компонент
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800,600);
 		frame.setVisible(true);
