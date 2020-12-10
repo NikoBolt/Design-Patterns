@@ -5,7 +5,7 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class GumballMachine
 		/* */ extends UnicastRemoteObject implements GumballMachineRemote /* */
-			// Резим удаленной службы		и интерфейс удаленного доступа
+			// Режим удаленной службы		и интерфейс удаленного доступа
 {
 	//
 	private static final long serialVersionUID = 2L;

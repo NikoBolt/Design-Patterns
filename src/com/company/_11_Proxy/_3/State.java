@@ -2,6 +2,7 @@ package com.company._11_Proxy._3;
 
 import java.io.Serializable;
 
+			// теперь Serializable
 public interface State extends Serializable {
  
 	public void insertQuarter();
