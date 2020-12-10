@@ -1,4 +1,4 @@
-package com.company._11_Proxy._5_virtual_Proxy_State;
+package com.company._11_Proxy._4_2_virtual_Proxy_State;
 
 //import javax.swing.*;
 import javax.swing.Icon;
