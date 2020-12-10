@@ -1,4 +1,4 @@
-package com.company._11_Proxy._4_virtualproxy;
+package com.company._11_Proxy._4_1_virtualProxy;
 
 //import javax.swing.*;
 import javax.swing.JComponent;

@@ -1,4 +1,4 @@
-package com.company._11_Proxy._4_virtualproxy;
+package com.company._11_Proxy._4_1_virtualProxy;
 
 import java.net.*;
 import javax.swing.*;

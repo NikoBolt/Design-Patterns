@@ -1,4 +1,4 @@
-package com.company._11_Proxy._4_virtualproxy;
+package com.company._11_Proxy._4_1_virtualProxy;
 
 //import javax.swing.*;
 import javax.swing.Icon;
@@ -52,7 +52,7 @@ class ImageProxy implements Icon {
 				// Иначе выводится сообщение о загрузке
 			g.drawString("Loading album cover, please wait...", x+300, y+190);
 
-
+				// Загружается НАСТОЯЩЕЕ изображение
 			if (!retrieving) { // проверка, началась ли загрузка
 				retrieving = true;	// если нет, то МОЖНО начать
 
@@ -65,7 +65,9 @@ class ImageProxy implements Icon {
 									// ImageIcon возвращает управление
 							c.repaint();
 								// оповещаем Swing о необходимости перерисовки
+								// =================
 								// Изображение прорисовывается на экране
+								// =================
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
