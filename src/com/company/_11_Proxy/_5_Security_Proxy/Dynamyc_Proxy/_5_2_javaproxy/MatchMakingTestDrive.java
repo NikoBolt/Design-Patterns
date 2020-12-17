@@ -30,6 +30,8 @@ public class MatchMakingTestDrive {
 		}
 		System.out.println("Rating is " + ownerProxy.getGeekRating());
 
+
+
 		PersonBean nonOwnerProxy = getNonOwnerProxy(joe);				// Создание зама посетителя
 		System.out.println("Name is " + nonOwnerProxy.getName());		// вызов get-метода
 		try {															//
